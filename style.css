@@ -42,8 +42,6 @@ form{
     gap:20px;
 }
 
-.start-button{}
-
 input,button{
     padding: 10px;
     font-size: 1.2rem;
