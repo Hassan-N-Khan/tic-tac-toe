@@ -7,8 +7,43 @@
     <title>Tic Tac Toe Game</title>
 </head>
 <body>
-    <h1>Tic-Tac-Toe</h1>
-    <input type="text" name="player-one" id="player-one" placeholder="Player One" autocorrect="off" spellcheck="false" maxlength="20">
+    <div class="start-screen">
+        <div>
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <form>
+            <div>
+                <input type="text" name="player-one" id="player-one" placeholder="Player One" autocorrect="off" spellcheck="false" maxlength="20">
+                <span>vs</span>
+                <input type="text" name="player-two" id="player-two" placeholder="Player Two" autocorrect="off" spellcheck="false" maxlength="20">
+            </div>
+            <button class="start-button" type="submit">Start Game</button>
+        </form>
+    </div>
+    <div class="game-screen">
+        <div class="game-info">
+            <div class="scoreboard">
+                <span class="player-one-score"></span>
+                <span class="player-two-score"></span>
+            </div>
+            <div class="current-player">
+                <span class="current-player-label">Current Player:</span>
+                <span class="current-player-name"></span>
+            </div>
+        </div>
+        <div class="game-board">
+            <div class="cell" data-cell="0"></button></div>
+            <div class="cell" data-cell="1"></button></div>
+            <div class="cell" data-cell="2"></button></div>
+            <div class="cell" data-cell="3"></button></div>
+            <div class="cell" data-cell="4"></button></div>
+            <div class="cell" data-cell="5"></button></div>
+            <div class="cell" data-cell="6"></button></div>
+            <div class="cell" data-cell="7"></button></div>
+            <div class="cell" data-cell="8"></button></div>
+        </div>
+        <button class="restart-button">Restart Game</button>
+    </div>
     <script src="./game.js"></script>
 </body>
 </html>
